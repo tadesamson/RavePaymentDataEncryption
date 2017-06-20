@@ -60,7 +60,7 @@ namespace EncryptionService
             des.Mode = CipherMode.ECB;
             des.Padding = PaddingMode.PKCS7;
             ICryptoTransform cryptoTransform = des.CreateDecryptor();
-            byte[] EncryptDataBytes=ASCIIEncoding.UTF8.GetBytes(encryptedData);
+            byte[] EncryptDataBytes=Convert.FromBase64String(encryptedData);
             byte[] plainDataBytes= cryptoTransform.TransformFinalBlock(EncryptDataBytes, 0, EncryptDataBytes.Length);
             des.Clear();
             return ASCIIEncoding.UTF8.GetString(plainDataBytes);
