@@ -1,0 +1,8 @@
+E:\Projects\.NET Projects\Libraries\EncryptionService\EncryptionTest\bin\Debug\EncryptionTest.exe.config
+E:\Projects\.NET Projects\Libraries\EncryptionService\EncryptionTest\bin\Debug\EncryptionTest.exe
+E:\Projects\.NET Projects\Libraries\EncryptionService\EncryptionTest\bin\Debug\EncryptionTest.pdb
+E:\Projects\.NET Projects\Libraries\EncryptionService\EncryptionTest\bin\Debug\EncryptionService.dll
+E:\Projects\.NET Projects\Libraries\EncryptionService\EncryptionTest\bin\Debug\EncryptionService.pdb
+E:\Projects\.NET Projects\Libraries\EncryptionService\EncryptionTest\obj\Debug\EncryptionTest.csprojResolveAssemblyReference.cache
+E:\Projects\.NET Projects\Libraries\EncryptionService\EncryptionTest\obj\Debug\EncryptionTest.exe
+E:\Projects\.NET Projects\Libraries\EncryptionService\EncryptionTest\obj\Debug\EncryptionTest.pdb
