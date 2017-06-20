@@ -35,7 +35,7 @@ namespace EncryptionService
             byte[] secretFirst12Bytes = ASCIIEncoding.UTF8.GetBytes(secretKeyFirst12);
             byte[] combineKey = new byte[24];
             Array.Copy(secretFirst12Bytes, 0, combineKey, 0, secretFirst12Bytes.Length);
-            Array.Copy(hashedSecretLast12Bytes, 12, combineKey, 0, hashedSecretLast12Bytes.Length);
+            Array.Copy(hashedSecretLast12Bytes, 0, combineKey, 12, hashedSecretLast12Bytes.Length);
             return Convert.ToBase64String(combineKey);
         }
 
