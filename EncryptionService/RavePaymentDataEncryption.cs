@@ -30,13 +30,14 @@ namespace EncryptionService
             byte[] hashedSecretLast12Bytes=new byte[12];
             Array.Copy(hashedSecret, hashedSecret.Length - 12, hashedSecretLast12Bytes, 0, 12);
             String hashedSecretLast12HexString = BitConverter.ToString(hashedSecretLast12Bytes);
+            hashedSecretLast12HexString = hashedSecretLast12HexString.ToLower().Replace("-", "");
             String secretKeyFirst12 = secretKey.Replace("FLWSECK-", "").Substring(0,12);
             byte[] hashedSecretLast12HexBytes = ASCIIEncoding.UTF8.GetBytes(hashedSecretLast12HexString);
             byte[] secretFirst12Bytes = ASCIIEncoding.UTF8.GetBytes(secretKeyFirst12);
             byte[] combineKey = new byte[24];
             Array.Copy(secretFirst12Bytes, 0, combineKey, 0, secretFirst12Bytes.Length);
-            Array.Copy(hashedSecretLast12Bytes, 0, combineKey, 12, hashedSecretLast12Bytes.Length);
-            return Convert.ToBase64String(combineKey);
+            Array.Copy(hashedSecretLast12HexBytes, hashedSecretLast12HexBytes.Length-12, combineKey, 12, 12);
+            return  ASCIIEncoding.UTF8.GetString(combineKey);
         }
 
         public string EncryptData(string encryptionKey, string data)

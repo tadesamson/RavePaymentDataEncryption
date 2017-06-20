@@ -12,6 +12,7 @@ namespace EncryptionTest
         {
             EncryptionService.RavePaymentDataEncryption en = new EncryptionService.RavePaymentDataEncryption();
             string key= en.GetEncryptionKey("FLWSECK-4127f15e63c9098402dcc7891798fb0f-X");
+            string cipher = en.EncryptData(key, "{'data':'tade'}");
             Console.WriteLine(key);
             Console.ReadLine();
 
