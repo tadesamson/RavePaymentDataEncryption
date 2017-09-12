@@ -2,3 +2,4 @@ E:\Projects\.NET Projects\Libraries\EncryptionService\EncryptionService\bin\Debu
 E:\Projects\.NET Projects\Libraries\EncryptionService\EncryptionService\bin\Debug\EncryptionService.pdb
 E:\Projects\.NET Projects\Libraries\EncryptionService\EncryptionService\obj\Debug\EncryptionService.dll
 E:\Projects\.NET Projects\Libraries\EncryptionService\EncryptionService\obj\Debug\EncryptionService.pdb
+E:\Projects\.NET Projects\Libraries\EncryptionService\EncryptionService\obj\Debug\EncryptionService.csprojResolveAssemblyReference.cache
