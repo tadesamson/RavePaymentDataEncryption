@@ -28,6 +28,7 @@ namespace EncryptionTest
                                                 "}";
 
             string cipher = en.EncryptData(key, data);
+
             string plaintext = en.DecryptData(cipher, key);
             Console.WriteLine(key);
             Console.ReadLine();
