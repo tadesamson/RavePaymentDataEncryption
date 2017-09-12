@@ -11,8 +11,7 @@ the return key can be use to initiate the EncryptData method.
 NB: in other to get a success response from rave, comply to using Rave payload, payload part sometimes change. So, be up to date
     to ensure you're encypting the correct payload format.
 
-```
- EncryptionService.RavePaymentDataEncryption en = new EncryptionService.RavePaymentDataEncryption();
+```EncryptionService.RavePaymentDataEncryption en = new EncryptionService.RavePaymentDataEncryption();
             string key = en.GetEncryptionKey("FLWSECK-4127f15e63c9098402dcc7891798fb0f-X");
             string data="{" +
                                                 "\"PBFPubKey\":\"FLWPUBK-1cf610974690c2560cb4c36f4921244a-X\"," +
@@ -29,16 +28,15 @@ NB: in other to get a success response from rave, comply to using Rave payload, 
                                                 "\"cardno\":\"5438898014560229\"" +
                                                 "}";
 
-            string cipher = en.EncryptData(key, data);
-            ```
+            string cipher = en.EncryptData(key, data);```
 
 the generated long string cipher can be used as your client parameter: 
-```
-{
+
+```{
   "PBFPubKey": "FLWPUBK-1cf610974690c2560cb4c36f4921244a-X",
   "client": cipher
   "alg": "3DES-24"
-}
-```
+}```
+
 this is the response body sent to rave.
 HAPPY CODING..
