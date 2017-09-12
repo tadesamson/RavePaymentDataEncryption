@@ -8,7 +8,7 @@ using standard .net Cryptographic algorithms.
 # Usage
 to use the RavePaymentDataEncryption, simply create an instance and call the GetEncryptionKey method. 
 the return key can be use to initiate the EncryptData method.
-NB: in other to get a success response from rave, comply to using Rave payload, payload part sometimes change. So, be up to date
+NB: in other to get a success response from rave, comply to using Rave payload, payload paramters or values (test payload) sometimes change. So, be up to date
     to ensure you're encypting the correct payload format.
 
 ```
